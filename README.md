@@ -1,2 +1,2 @@
-# SIDM_order_xingyu
-Change order for scattering in SIDM
+# SIDM_tidal_field
+SIDM module + tidal field effect
