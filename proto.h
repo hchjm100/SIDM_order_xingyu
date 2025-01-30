@@ -197,13 +197,13 @@ void   write_pid_file(void);
 
 // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
-void   sidm(double dt_drift);
+void   sidm(double dt_drift, double dt_gravkick);
 void   randomize(int arr[], int n);
 double get_gij(double h,double dr);
 double get_Wij(double h,double dr);
 double fcosthR(double costh,double v,double vw);
 double fcosthM(double costh,double v,double vw);
 int    ngb_sidm(FLOAT searchcenter[3], double TypicalDist, int *startnode);
-int    doscatt(int bullet, int mode,double dt_drift,double TypicalDist);
+int    doscatt(int bullet, int mode,double dt_drift, double dt_gravkick, double TypicalDist);
 int    sidm_compare_key(const void *a, const void *b);
 

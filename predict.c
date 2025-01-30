@@ -52,7 +52,7 @@ void move_particles(int time0, int time1)
   if(dt_drift>0.0 && !(TreeReconstructFlag)){
   //if(dt_drift>0.0){ // results similar, but disturbance exists occasionally...
      // In the beginning of scattering, will clear all nscatt
-     sidm(dt_drift);
+     sidm(dt_drift, dt_gravkick);
   }
 
   //if(ThisTask==0) printf("\n XXXXXX dt_drift XXXXXXXXXX %g\n",dt_drift);
