@@ -1,7 +1,4 @@
 /Applications/CLion.app/Contents/bin/cmake/mac/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/x64/ninja -G Ninja -S /Users/sanghaoyu/CLionProjects/Gadget-2/SIDM_order_xingyu -B /Users/sanghaoyu/CLionProjects/Gadget-2/SIDM_order_xingyu/cmake-build-debug
--- Found MPI_C: /usr/local/Cellar/open-mpi/5.0.6/lib/libmpi.dylib (found version "3.1")
--- Found MPI: TRUE (found version "3.1") found components: C
--- Found GSL: /usr/local/Cellar/gsl/2.8/include (found version "2.8")
--- Configuring done (3.2s)
+-- Configuring done (2.9s)
 -- Generating done (0.0s)
 -- Build files have been written to: /Users/sanghaoyu/CLionProjects/Gadget-2/SIDM_order_xingyu/cmake-build-debug
