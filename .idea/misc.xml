@@ -18,5 +18,7 @@
       </MakefileProjectSettings>
     </option>
   </component>
-  <component name="MakefileWorkspace" PROJECT_DIR="$PROJECT_DIR$" />
+  <component name="MakefileWorkspace">
+    <contentRoot DIR="$PROJECT_DIR$" />
+  </component>
 </project>

@@ -483,3 +483,37 @@ events:
         
       exitCode: 0
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.30/Modules/FindMPI.cmake:1282 (try_compile)"
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.30/Modules/FindMPI.cmake:1326 (_MPI_try_staged_settings)"
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.30/Modules/FindMPI.cmake:1649 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:7 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/Users/sanghaoyu/CLionProjects/Gadget-2/SIDM_order_xingyu/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Dmh0zj"
+      binary: "/Users/sanghaoyu/CLionProjects/Gadget-2/SIDM_order_xingyu/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Dmh0zj"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/local/Cellar/llvm/19.1.6/bin/clang-scan-deps"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/usr/local/opt/libomp/lib -L/usr/local/opt/gsl/lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/sanghaoyu/CLionProjects/Gadget-2/SIDM_order_xingyu/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Dmh0zj'
+        
+        Run Build Command(s): /Applications/CLion.app/Contents/bin/ninja/mac/x64/ninja -v cmTC_c1525
+        [1/2] /usr/local/opt/llvm/bin/clang  -isystem /usr/local/Cellar/open-mpi/5.0.6/include -std=gnu11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_c1525.dir/test_mpi.c.o -MF CMakeFiles/cmTC_c1525.dir/test_mpi.c.o.d -o CMakeFiles/cmTC_c1525.dir/test_mpi.c.o -c /Users/sanghaoyu/CLionProjects/Gadget-2/SIDM_order_xingyu/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Dmh0zj/test_mpi.c
+        [2/2] : && /usr/local/opt/llvm/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/usr/local/opt/libomp/lib -L/usr/local/opt/gsl/lib CMakeFiles/cmTC_c1525.dir/test_mpi.c.o -o cmTC_c1525  /usr/local/Cellar/open-mpi/5.0.6/lib/libmpi.dylib && :
+        
+      exitCode: 0
+...
